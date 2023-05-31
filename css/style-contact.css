@@ -1,0 +1,161 @@
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+/*header*/
+.main-header {
+  border-bottom: 3px solid #f2f2f2;
+  z-index: 999;
+  background-color: #fff;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+.container img{
+  width: 50px;
+  object-fit: contain;
+}
+.main-header .logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #0078d7;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #005a9e;
+}
+
+
+.content {
+  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  background-color: #0078d7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0063ad;
+}
+footer {
+  background-color: #0078d7;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+}
+
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #0078d7;
+  background-color: white;
+}
+
+.social-icons a:hover {
+  color: gray;
+}
+.col-md-6 p {
+  font-weight: bold;
+  margin: 5px;
+}
+.fa {
+  font-size: 20px;
+}
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}

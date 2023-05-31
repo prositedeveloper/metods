@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Приближение функций</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <ul>
+        <li><a href="pogreshnosti.html">Погрешности</a></li>
+        <li><a href="priblizhenie.html">Приближение функций</a></li>
+        <li><a href="reshenie.html">Решение уравнений и систем уравнений</a></li>
+        <li><a href="interpolation.html">Интерполяция и аппроксимация функци</a></li>
+        <li><a href="integrirovanie.html">Численное дифференцирование и интегрирование</a></li>
+        <li><a href="index.html">Главная страница</a></li>
+      </ul>
+    </nav>
+    </header>
+<main>
+
+  <div class="content">
+    <h1>Приближение функций</h1>
+
+    <p>Приближением (аппроксимацией) функции f(x) называется отыскание функции g(x), близкой в некотором смысле к f(x). Аппроксимирующая функция g(x) должна быть «проще» исходной. Критерий простоты и понимание близости функций будут рассмотрены ниже. Приближение может потребоваться в следующих случаях:</p>
+
+    <div class="block">
+      <div class="block-header">
+        <h2>Первый случай</h2>
+      </div>
+      <div class="block-content">
+        <p>(1) Известны, например, из эксперимента, значения функции f(x1)=y1, f(x2)=y2,.., f(xn)=yn (таким образом, функция y=f(x) задана таблично). Требуется найти значение f(x) при таком значении аргумента x*, которого нет среди узлов x1, x2,..., xn, но сделать это по каким-либо причинам затруднительно. В таком случае можно найти аппроксимирующую функцию g(x); если она «близка» к f(x) на множестве узлов X={x1, x2, ..., xn}, то и в нужной точке x*, вероятно, f(x*)≈g(x*).</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-header">
+        <h2>Второй случай</h2>
+      </div>
+      <div class="block-content">
+        <p>(2) Функция f(x) задана аналитически, т.е. формулой, но эта формула слишком сложна для регулярного использования. В этом случае выгодно аппроксимировать f(x) более простой функцией g(x) и все расчеты выполнять с ней.</p>
+      </div>
+    </div>
+
+    <p>Рассмотрим теперь некоторые подходы к понятию близости функций.</p>
+
+    <div class="block">
+      <div class="block-header">
+        <h2>Интерполяция</h2>
+      </div>
+      <div class="block-content">
+        <p>Требуется найти полином Pn(x), принимающий те же значения, что и аппроксимируемая функция f(x), в (n+1) узле.</p>
+        <img src="img/int1.jpg" alt="Фото">
+      </div>
+    </div>
+
+  <div class="block">
+      <div class="block-header">
+        <h2>Наилучшее приближение</h2>
+      </div>
+      <div class="block-content">
+        <p>Пусть функция f (x ) задана таблич-
+но в узлах x0,x1,,xn . Подберем полином Pn (x ) = a0 +a
+чтобы сумма квадратов разностей значения аппроксимируемой функ-
+ции и полинома по всем узлам минимизировалась</p>
+      </div>
+    </div>
+  </div>
+  
+</main>
+
+</body>
+
+  <script>
+    const blocks = document.querySelectorAll('.block');
+
+blocks.forEach(block => {
+  const header = block.querySelector('.block-header');
+  const content = block.querySelector('.block-content');
+
+  header.addEventListener('click', () => {
+    block.classList.toggle('open');
+  });
+});
+
+  </script>
+
+</html>

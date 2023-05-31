@@ -1,0 +1,119 @@
+/* Общие стили для страницы */
+body {
+font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+font-size: 16px;
+line-height: 1.5;
+color: #333;
+background-color: #fff;
+}
+
+/* Стили для блока с пунктами слева */
+.nav {
+position: fixed;
+top: 0;
+left: 0;
+width: 200px;
+height: 100%;
+background-color: #0078d7;
+color: #fff;
+padding: 20px;
+box-sizing: border-box;
+}
+.nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.nav li {
+margin-bottom: 10px;
+}
+p{
+  text-align: justify;
+}
+.nav a {
+display: block;
+color: #fff;
+text-decoration: none;
+padding: 10px;
+border-radius: 5px;
+}
+.nav a:hover {
+background-color: #005a9e;
+}
+
+/* Стили для контент блока по центру */
+.content {
+margin: 100px auto 0;
+max-width: 800px;
+padding: 20px;
+box-sizing: border-box;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.content h1 {
+font-size: 24px;
+margin: 10px 0;
+text-align: center;
+}
+
+/* Стили для блока с классом "block" */
+.block {
+  margin:10px 0;
+}
+
+.block-header {
+  color: white;
+  width: 100%;
+  background-color: #0078d7;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.block-header h2 {
+  margin: 0;
+}
+
+.block-content {
+  border: 1px solid #0078d7;
+  max-height: 0;
+  padding: 0 10px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.block-content>img{
+  width: 100%;
+  object-fit: contain;
+}
+.block.open .block-content {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in;
+}
+footer {
+  background-color: #202020;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+footer nav ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}

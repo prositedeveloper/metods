@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Решение уравнений и систем уравнений</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <ul>
+        <li><a href="pogreshnosti.html">Погрешности</a></li>
+        <li><a href="priblizhenie.html">Приближение функций</a></li>
+        <li><a href="reshenie.html">Решение уравнений и систем уравнений</a></li>
+        <li><a href="interpolation.html">Интерполяция и аппроксимация функци</a></li>
+        <li><a href="integrirovanie.html">Численное дифференцирование и интегрирование</a></li>
+        <li><a href="index.html">Главная страница</a></li>
+      </ul>
+    </nav>
+    </header>
+<main>
+
+  <div class="content">
+  <h1>Решение уравнений и систем уравнений</h1>
+  
+  <div class="block">
+    <div class="block-header">
+      <h2>Решение уравнений</h2> 
+    </div>
+    <div class="block-content">
+      <p>Одно из основных задач математического анализа - решение уравнений. Решить уравнение означает найти такое значение переменной, которое удовлетворяет уравнению. Существует много различных методов для решения уравнений, вот некоторые из них:</p>
+      <p>Метод половинного деления:</p>
+      <p>x = (a + b) / 2</p>
+      <p>Метод Ньютона:</p>
+      <p>x = x<sub>0</sub> - f(x<sub>0</sub>) / f'(x<sub>0</sub>)</p>
+      <p>Метод секущих:</p>
+      <p>x<sub>n+1</sub> = x<sub>n</sub> - f(x<sub>n</sub>) * (x<sub>n</sub> - x<sub>n-1</sub>) / (f(x<sub>n</sub>) - f(x<sub>n-1</sub>))</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-header">
+      <h2>Решение систем уравнений</h2> 
+    </div>
+    <div class="block-content">
+      <p>Решение систем уравнений - это процесс нахождения значений нескольких переменных, которые удовлетворяют набору уравнений. Существует несколько методов для решения систем уравнений:</p>
+      <p>Метод Гаусса:</p>
+      <p>Систему уравнений можно представить в виде расширенной матрицы:</p>
+      <p><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/80dfc73d54efca16969f522607d56490d2b86c1b"></p>
+      <p>Затем, используя преобразования строк, привести матрицу к ступенчатому виду и решить систему обратным ходом.</p>
+      <p>Метод Якоби:</p>
+      <p>Систему уравнений можно представить в виде:</p>
+      <p><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8fb35a4f1b4ff4b5e5d8d18e24c5dc5be5cb4177"></p>
+    </div>
+  </div>
+    <div class="block">
+      <div class="block-header">
+        <h2>Метод простых итераций</h2>
+      </div>
+      <div class="block-content">
+        <p>Метод простых итераций используется для решения системы нелинейных уравнений вида:</p>
+        <p><img src="https://latex.codecogs.com/svg.image?F(x)=0" title="F(x)=0" /></p>
+        <p>где <img src="https://latex.codecogs.com/svg.image?F(x)" title="F(x)" /> - вектор-функция, которую необходимо приблизить до нуля.</p>
+        <p>Для этого строится итерационный процесс:</p>
+        <p><img src="https://latex.codecogs.com/svg.image?x^{(k&plus;1)}=x^{(k)}-\alpha_kF(x^{(k)})" title="x^{(k+1)}=x^{(k)}-\alpha_kF(x^{(k)})" /></p>
+        <p>где <img src="https://latex.codecogs.com/svg.image?x^{(k)}" title="x^{(k)}" /> - приближенное решение на k-ой итерации, <img src="https://latex.codecogs.com/svg.image?\alpha_k" title="\alpha_k" /> - коэффициент релаксации, подбираемый таким образом, чтобы итерационный процесс быстро сходился.</p>
+      </div>
+    </div>
+
+    <div class="block">
+  <div class="block-header">
+    <h2>Метод Ньютона</h2>
+  </div>
+  <div class="block-content">
+    <p>Метод Ньютона используется для решения системы нелинейных уравнений вида:</p>
+    <p><img src="https://latex.codecogs.com/svg.image?F(x)=0" title="F(x)=0" /></p>
+    <p>где <img src="https://latex.codecogs.com/svg.image?F(x)" title="F(x)" /> - вектор-функция, которую необходимо приблизить до нуля.</p>
+    <p>Для этого строится итерационный процесс:</p>
+    <p><img src="https://latex.codecogs.com/svg.image?x^{(k&plus;1)}=x^{(k)}-[J_F(x^{(k)})]^{-1}F(x^{(k)})" title="x^{(k+1)}=x^{(k)}-[J_F(x^{(k)})]^{-1}F(x^{(k)})" /></p>
+    <p>где <img src="https://latex.codecogs.com/svg.image?J_F(x)" title="J_F(x)" /> - матрица Якоби, которая является производной вектор-функции <img src="https://latex.codecogs.com/svg.image?F(x)" title="F(x)" /> по вектору <img src="https://latex.codecogs.com/svg.image?x" title="x" />.</p>
+  </div>
+</div>
+
+</main>
+
+</body>
+
+  <script>
+    const blocks = document.querySelectorAll('.block');
+
+blocks.forEach(block => {
+  const header = block.querySelector('.block-header');
+  const content = block.querySelector('.block-content');
+
+  header.addEventListener('click', () => {
+    block.classList.toggle('open');
+  });
+});
+
+  </script>
+
+</html>
